@@ -5,142 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignments</title>
         <link rel="stylesheet" href="styles.css">
-    
-        <style>
-            * { margin: 0; padding: 0; box-sizing: border-box; }
-            body {
-                font-family: Arial, sans-serif;
-                background: url('images/minecraft_back.jpg') no-repeat center center/cover;
-                color: rgb(255, 255, 255);
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: flex-start;
-                padding: 20px;
-                text-align: center;
-                margin-top: 70px;
-                overflow: auto;
-                backdrop-filter: blur(5px);
-                background-attachment: fixed;
-                min-height: 100vh;
-            }
-            header {
-                width: 100%;
-                background: rgba(0, 0, 0, 0.7);
-                padding: 15px 0;
-                position: fixed;
-                top: 0;
-                left: 0;
-                z-index: 1000;
-                text-align: center;
-                margin-top: -70px;
-            }
-            nav {
-                display: flex;
-                justify-content: center;
-                gap: 20px;
-            }
-            nav a {
-                color: white;
-                text-decoration: none;
-                font-size: 18px;
-                padding: 10px;
-                transition: color 0.3s;
-            }
-            nav a:hover, .dropdown:hover .dropbtn {
-                color: #5f77ff;
-            }
-            .container{
-                background: rgba(0, 0, 0, 0.7);
-                color: white;
-                padding: 20px;
-                margin: 20px;
-                border-radius: 10px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            }
-            /* The dropdown container */
-            .dropdown {
-                float: left;
-                overflow: hidden;
-            }
-            
-            /* Dropdown button */
-            .dropdown .dropbtn {
-                font-size: 16px;
-                border: none;
-                outline: none;
-                color: white;
-                padding: 10px 15px;
-                background-color: inherit;
-                font-family: inherit; /* Important for vertical align on mobile phones */
-                margin: 0; /* Important for vertical align on mobile phones */
-            }
-            
-            .dropdown-content {
-                display: none;
-                position: absolute;
-                background-color: #000000c3;
-                min-width: 160px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                z-index: 1;
-            }
-            
-            /* Links inside the dropdown */
-            .dropdown-content a {
-                float: none;
-                color: rgb(255, 255, 255);
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-                text-align: left;
-            }
-            
-            /* Add a grey background color to dropdown links on hover */
-            .dropdown-content a:hover {
-                background-color: #ddd;
-            }
-            
-            /* Show the dropdown menu on hover */
-            .dropdown:hover .dropdown-content {
-                display: block;
-            }
-            .table-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            }
-            table {
-                width: 80%;
-                max-width: 600px;
-                border-collapse: collapse;
-                background: rgba(255, 255, 255, 0.196);
-                border-radius: 10px;
-                overflow: hidden;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            }
-            th, td {
-                padding: 15px;
-                text-align: left;
-                border-bottom: 1px solid #ddd;
-            }
-            th {
-                background: #1e4a71;
-                color: white;
-                text-align: center;
-            }
-            tr:last-child td {
-                border-bottom: none;
-            }
-            td:nth-child(2), td:nth-child(3) {
-                text-align: center;
-            }
-            tbody tr:hover {
-                background: rgba(124, 95, 255, 0.1);
-            }
-        </style>
     </head>
 </head>
-<body>
+<body class="assignments-bg">
     <header>
         <nav>
             <a href="index.html">Home</a>
@@ -151,9 +18,8 @@
                 </button>
                 <div class="dropdown-content">
                     <a href="ResearchPaper.html">Research Paper</a>
-                    <a href="Quizzes.html" target="_blank" class="button">Reading Assignments</a>
-                    <a href="TeamProjPhase1.html" target="_blank" class="button">Team Project Phase 1</a>
-                    <a href="TeamProjPhase2.html" target="_blank" class="button">Team Project Phase 2</a>
+                    <a href="TeamProjPhase1.html" class="button">Team Project Phase 1</a>
+                    <a href="TeamProjPhase2.html" class="button">Team Project Phase 2</a>
                 </div>
             </div>
         </nav>
@@ -177,22 +43,22 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><nav><a href="ResearchPaper.html" target="_blank" class="button-row">User & Problem Space Research Paper</a></td>
+                    <td><nav><a href="ResearchPaper.html" class="button-row">User & Problem Space Research Paper</a></td>
                     <td>Individual</td>
                     <td>20%</td>
                 </tr>
                 <tr>
-                    <td><nav><a href="Quizzes.html" target="_blank" class="button">Reading Assignments</a></nav></td>
+                    <td><nav><a href="" class="button">Reading Assignments</a></nav></td>
                     <td>Individual</td>
                     <td>10%</td>
-                </tr>
+                </tr> 
                 <tr>
-                    <td><nav><a href="TeamProjPhase1.html" target="_blank" class="button">Team Project Phase 1</a></nav></td>
+                    <td><nav><a href="TeamProjPhase1.html" class="button">Team Project Phase 1</a></nav></td>
                     <td>Team</td>
                     <td>30%</td>
                 </tr>
                 <tr>
-                    <td><nav><a href="TeamProjPhase2.html" target="_blank" class="button">Team Project Phase 2</a></nav></td>
+                    <td><nav><a href="TeamProjPhase2.html" class="button">Team Project Phase 2</a></nav></td>
                     <td>Team</td>
                     <td>30%</td>
                 </tr>
